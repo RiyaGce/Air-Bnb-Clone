@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { MenuIcon } from "lucide-react";
 import {
+  
   RegisterLink,
   LoginLink,
   LogoutLink,
@@ -46,7 +47,7 @@ export async function UserNav() {
             <DropdownMenuItem>
               <form action={createHomewithId} className="w-full">
                 <button type="submit" className="w-full text-start">
-                  Airbnb your Home
+                  Air BnB Home
                 </button>
               </form>
             </DropdownMenuItem>
@@ -72,6 +73,9 @@ export async function UserNav() {
           </>
         ) : (
           <>
+          <DropdownMenuItem>
+              <RegisterLink className="w-full">Admin</RegisterLink>
+            </DropdownMenuItem>
             <DropdownMenuItem>
               <RegisterLink className="w-full">Register</RegisterLink>
             </DropdownMenuItem>
