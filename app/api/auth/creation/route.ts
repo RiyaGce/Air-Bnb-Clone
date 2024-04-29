@@ -32,5 +32,5 @@ export async function GET() {
     });
   }
 
-  return NextResponse.redirect("https://air-bnb-clone-task.vercel.app");
+  return NextResponse.redirect("https://air-bnb-clone-riya.vercel.app");
 }
